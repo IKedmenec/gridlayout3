@@ -1,0 +1,35 @@
+div {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    text-align: center;
+    top: 100px;
+    left: 100px;
+    animation: pulsiraj 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulsiraj {
+    0% {
+        transform: scale(0.75);
+    }
+
+    50% {
+        transform: scale(1);
+        color: green;
+    }
+
+    85% {
+        transform: scale(1.2);
+        color: yellow;
+        background-color: green;
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
